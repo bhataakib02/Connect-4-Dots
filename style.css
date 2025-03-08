@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #2c3e50;
+    color: white;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(7, 80px);
+    grid-template-rows: repeat(6, 80px);
+    gap: 5px;
+    margin: 20px auto;
+    background: #2980b9;
+    padding: 10px;
+    border-radius: 10px;
+    width: max-content;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.cell.red {
+    background: red;
+}
+
+.cell.yellow {
+    background: yellow;
+}
